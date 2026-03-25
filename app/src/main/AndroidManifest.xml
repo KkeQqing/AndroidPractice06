@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidPractice06">
         <activity
+            android:name=".SecondActivity"
+            android:exported="false"
+            android:launchMode="singleTask"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

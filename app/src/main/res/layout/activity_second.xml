@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <!-- 显示接收到的参数 -->
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是第二页"
+        android:textSize="20sp"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- 按钮1：直接关闭，不返回数据 -->
+    <Button
+        android:id="@+id/bt_r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="直接关闭 (无返回)"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- 按钮2：返回成功数据 (RESULT_OK) -->
+    <Button
+        android:id="@+id/bt_r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回成功数据"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- 按钮3：返回取消信号 (RESULT_CANCELED) -->
+    <Button
+        android:id="@+id/bt_r3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回取消信号"
+        android:backgroundTint="#F44336"/>
+
+</LinearLayout>
